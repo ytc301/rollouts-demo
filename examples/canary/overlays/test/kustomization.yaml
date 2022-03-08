@@ -1,6 +1,10 @@
+namesuffix: -test
+commonLabels:
+  app: canary-test
 bases:
 - ../../base
 patchesStrategicMerge:
 - deployment.yaml
+resources:
 - ingress.yaml
 namespace: creator
