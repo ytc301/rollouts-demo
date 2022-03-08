@@ -1,5 +1,5 @@
 commonLabels:
-  app: dao-2048
+  app: canary-2048
 resources:
   - deployment.yml
   - service.yml
