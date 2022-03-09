@@ -5,11 +5,8 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: canary
+      app: canary-test
   template:
-    metadata:
-      labels:
-        app: canary
     spec:
       containers:
       - name: canary
