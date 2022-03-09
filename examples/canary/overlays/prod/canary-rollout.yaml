@@ -7,11 +7,11 @@ spec:
   revisionHistoryLimit: 1
   selector:
     matchLabels:
-      app: canary
+      app: canary-prod
   template:
     metadata:
       labels:
-        app: canary
+        app: canary-prod
     spec:
       containers:
       - name: canary
