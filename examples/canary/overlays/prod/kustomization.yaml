@@ -6,7 +6,7 @@ bases:
 patchesStrategicMerge:
 - canary-rollout.yaml
 - canary-service.yaml
-- canary-preview-service.yaml
 resources:
+- canary-preview-service.yaml
 - canary-ingress.yaml
 - canary-preview-ingress.yaml
