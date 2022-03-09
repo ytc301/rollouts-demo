@@ -1,5 +1,5 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
 metadata:
   name: canary
 spec:
@@ -23,3 +23,7 @@ spec:
           requests:
             memory: 32Mi
             cpu: 5m
+  strategy:
+    blueGreen:
+      activeService: canary-test
+      previewService: canary-test
