@@ -26,4 +26,4 @@ spec:
   strategy:
     blueGreen:
       activeService: canary-test
-      previewService: canary-test
+      previewService: canary-test-1
