@@ -1,4 +1,4 @@
-namesuffix: -test
+nameSuffix: -test
 commonLabels:
   app: canary-test
 bases:
