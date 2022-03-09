@@ -3,14 +3,12 @@ kind: Rollout
 metadata:
   name: canary
 spec:
+  selector:
+    matchLabels:
+      app: canary-test
   template:
     spec:
       containers:
       - name: canary
         image: argoproj/rollouts-demo:latest
         imagePullPolicy: Always
-        ports:
-        - name: http
-          containerPort: 8080
-          protocol: TCP
-  strategy: {}
