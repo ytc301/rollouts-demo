@@ -13,5 +13,5 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: canary-preview
+          serviceName: canary-preview-prod
           servicePort: 80
