@@ -24,6 +24,7 @@ spec:
             memory: 32Mi
             cpu: 5m
   strategy:
-    blueGreen:
-      activeService: canary-test
-      previewService: canary-test-1
+    canary:
+      canaryService: canary-test
+      steps:
+      - setWeight: 100
